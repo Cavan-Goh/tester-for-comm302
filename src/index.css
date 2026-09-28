@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+    font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Trebuchet MS", Roboto, Ubuntu, sans-serif;
+  }
+}
+
+.badge-gradient-btn {
+  background: linear-gradient(135deg, #2962FF 0%, #9047FF 100%);
+}
+
+.badge-gradient-btn:hover {
+  background: linear-gradient(135deg, #1e52e0 0%, #7d33eb 100%);
+}
+
+/* Custom dark mode helpers */
+.dark-theme {
+  background-color: #0c0f17;
+  color: #f0f3fa;
+}
